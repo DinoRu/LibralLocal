@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Accueil de la Librairie Locale</h1>
+<p>Bienvenue à la Librairie Locale, un site developpé par <em>Dino Petit Russe</em><p>
+<h2>contenu dynamique</h2>
+<p>La libraire dispose des livres et consorts:<p>
+<ul>
+    <li><strong>Livre: </strong>{{num_books}}</li>
+    <li><strong>copies: </strong>{{num_books}}</li>
+    <li><strong>copies disponibles: </strong>{{num_books}}</li>
+    <li><strong>Author: </strong>{{num_authors}}</li>
+    <li><strong>Genre: </strong>{{num_genres}}</li>
+    <li><strong>Titles: </strong>{{num_titles}}</li>
+</ul>
+<p>Vous avez visité cette page {{ num_visits }} foi{{ num_visits|pluralize}}.</p>
+<hr>
+{% endblock %} 

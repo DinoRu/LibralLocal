@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1.5rem !important;
+}
+
+.sidebar-nav {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #131313;
+}
+
+.sidebar-nav li {
+    text-decoration: none;
+    list-style: none;
+    color: #324532;
+}
