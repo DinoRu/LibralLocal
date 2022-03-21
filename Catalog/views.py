@@ -10,6 +10,7 @@ from .models import(
     Book, BookInstance,
      Author, Genre)
 
+
 def index(request):
     num_books = Book.objects.all().count()
     num_instances = BookInstance.objects.all().count()
