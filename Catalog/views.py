@@ -37,19 +37,19 @@ def index(request):
 class BookListView(ListView):
     model = Book
     paginate_by = 3
-    
+    template_name = 'catalog/book_list.html'
 
 class BookDetailView(DetailView):  
     model = Book                                          
-
+    template_name = "catalog/book_detail.html"
 
 class AuthorListView(ListView):
     model = Author
-
+    template_name = "catalog/author_list.html"
 
 class AuthorDetailView(DetailView):
     model = Author
-
+    template_name = "catalog/author.detail.html"
 
 class LoanedBooksByUserListView(LoginRequiredMixin, ListView):
     models = BookInstance
