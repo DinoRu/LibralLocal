@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
 
+
 class Genre(models.Model):
     name = models.CharField(max_length=255, help_text="Saisir les genre litteraire disponible(ex: Science fiction)")
 
@@ -72,6 +73,7 @@ class BookInstance(models.Model):
         if self.due_back and date.today() > self.due_back:
             return True
         return False
+
 
 class Author(models.Model):
     first_name = models.CharField(max_length=150)
